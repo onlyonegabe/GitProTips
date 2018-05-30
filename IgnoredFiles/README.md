@@ -14,6 +14,9 @@ Use this when you get changes to files that you did not do but can't add them to
 
 * Had some good commands that were also useful after ignoring files, like show what files that were ignored.
   https://stackoverflow.com/questions/2363197/can-i-get-a-list-of-files-marked-assume-unchanged
+  
+* To unignore a file
+  https://stackoverflow.com/questions/17195861/undo-git-update-index-assume-unchanged-file
 
 ## The commands
 
@@ -29,10 +32,16 @@ git update-index --assume-unchanged <filename>
 git ls-files -v | grep '^[[:lower:]]'
 ```
 
-## Git alias
+## Git alias to show ingored files
 
 ```
 ignored = !git ls-files -v | grep "^[[:lower:]]"
+```
+
+## Unignore a file
+
+```
+git update-index --no-assume-unchanged <filename>
 ```
 
 ## ToDo:
