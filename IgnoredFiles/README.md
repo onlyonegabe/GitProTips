@@ -32,13 +32,13 @@ git update-index --assume-unchanged <filename>
 git ls-files -v | grep '^[[:lower:]]'
 ```
 
-## Git alias to show ingored files
+### Git alias to show ingored files
 
 ```
 ignored = !git ls-files -v | grep "^[[:lower:]]"
 ```
 
-## Unignore a file
+### Unignore a file
 
 ```
 git update-index --no-assume-unchanged <filename>
