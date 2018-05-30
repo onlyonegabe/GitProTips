@@ -47,3 +47,4 @@ git update-index --no-assume-unchanged <filename>
 ## ToDo:
 
 1. Have a command that can be copied and pasted for the alias.
+2. Better directions for setting up the alias.
